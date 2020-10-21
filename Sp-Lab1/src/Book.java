@@ -1,30 +1,46 @@
-public class Book {
+import java.util.ArrayList;
 
-    public String image,table,name;
-    public String paragraph;
+public class Book{
 
-    public Book(String name)
-    {
-        this.name = name;
-    }
-    public void createNewParagraph(String paragraph)
-    {
-        this.paragraph = paragraph;
-    }
+    private ArrayList<Chapter> list = new ArrayList<>();
+    private int counter;
+    private String title;
+    private Author author;
+    private Element elements = null;
 
-    public void createNewImage(String image)
+    Book(String title)
     {
-        this.image = image;
+        this.title = title;
     }
 
-    public void createNewTable(String table)
-    {
-        this.table = table;
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                '}';
+    }
+    public void addAuthor(Author autor) {
+        this.author = autor;
     }
 
-    public void print()
+
+    public int createChapter(String title)
     {
-        System.out.println(name + "\n" + paragraph + "\n" + image + "\n" + table) ;
+        this.list.add(new Chapter(title));
+        return this.list.size() - 1;
+    }
+
+
+    public Chapter getChapter(int index)
+    {
+        return this.list.get(index);
+    }
+
+
+    public void print() {
+        if(this.elements != null) {
+            elements.print();
+        }
     }
 
 }
