@@ -1,0 +1,44 @@
+com/model/ImageProxy.java
+ com.model.ImageProxy
+com/utils/JPGImageContent.java
+ com.utils.JpgImageContent
+com/utils/ImageContentFactory.java
+ com.utils.ImageContentFactory
+services/AlignLeft.java
+ services.AlignLeft
+com/model/Table.java
+ com.model.Table
+com/Interfaces/Visitor.java
+ com.Interfaces.Visitor
+com/model/Image.java
+ com.model.Image
+com/utils/DocumentManager.java
+ com.utils.DocumentManager
+com/utils/ImageContent.java
+ com.utils.ImageContent
+services/AlignRight.java
+ services.AlignRight
+com/model/TableOfContents.java
+ com.model.TableOfContents
+com/model/Book.java
+ com.model.Book
+com/model/Paragraph.java
+ com.model.Paragraph
+services/AlignCenter.java
+ services.AlignCenter
+com/utils/BMPImageContent.java
+ com.utils.BMPImageContent
+services/Context.java
+ services.Context
+com/Interfaces/Element.java
+ com.Interfaces.Element
+com/model/Author.java
+ com.model.Author
+com/model/Section.java
+ com.model.Section
+com/utils/Dimension.java
+ com.utils.Dimension
+com/Interfaces/Visitee.java
+ com.Interfaces.Visitee
+services/AlignStrategy.java
+ services.AlignStrategy
